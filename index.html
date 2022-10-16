@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="banner">Game Scoreboard</h1>
+        </header>
+
+        <div class="container">
+            <div id="home">
+                <h1>HOME</h1>
+                <div class="black-board" id="home-score"><h2 class="score">0</h2></div>
+                <div class="buttons">
+                    <button onclick="incHomeScoreBy1()">+1</button>
+                    <button onclick="incHomeScoreBy2()">+2</button>
+                    <button onclick="incHomeScoreBy3()">+3</button>
+                </div>
+            </div>
+            <div id="guest">
+                <h1>GUEST</h1>
+                <div class="black-board" id="guest-score"><h2 class="score">0</h2></div>
+                <div class="buttons">
+                    <button onclick="incGuestScoreBy1()">+1</button>
+                    <button onclick="incGuestScoreBy2()">+2</button>
+                    <button onclick="incGuestScoreBy3()">+3</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button class="big-button" id="new-game" onclick="newGame()">New Game</button>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
